@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const item = require('./routes/api/Items');
+const items = require('./routes/api/Items');
 
 const app = express();
 
@@ -16,7 +16,7 @@ mongoose
   .catch(err => console.log(err));
 
 // use routes
-app.use(bodyParser.json());
+app.use('api/items', items);
 
 // Variable repository
 const port = 3000 || 27017;
