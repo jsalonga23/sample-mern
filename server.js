@@ -16,7 +16,7 @@ mongoose
   .catch(err => console.log(err));
 
 // use routes
-app.use('api/items', items);
+app.use('/api/items', items);
 
 // Variable repository
 const port = 3000 || 27017;
