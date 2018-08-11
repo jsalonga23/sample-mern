@@ -19,6 +19,6 @@ mongoose
 app.use('/api/items', items);
 
 // Variable repository
-const port = 3000 || 27017;
+const port = 5000 || 27017;
 
 app.listen(port, () => console.log('Started on port '+ port));
