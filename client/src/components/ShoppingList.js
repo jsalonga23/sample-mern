@@ -14,6 +14,7 @@ import {
 import uuid from 'uuid';
 
 class ShoppingList extends Component{
+
   state = {
     items: [
       {id: uuid(), name: 'Eggs'},
@@ -21,6 +22,11 @@ class ShoppingList extends Component{
       {id: uuid(), name: 'Steak'},
       {id: uuid(), name: 'Water'},
     ]
+  }
+
+  addState() {
+
+
   }
 
   render() {
