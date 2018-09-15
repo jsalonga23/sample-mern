@@ -37,8 +37,6 @@ class ShoppingList extends Component{
     }));
   }
 
-
-
   render() {
 
     const {items} = this.state;
